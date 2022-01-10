@@ -12,7 +12,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div>
+  <div class="wi-content flex flex-col items-center pt-8 gap-4 text-center">
     <p class="text-4xl">
       <carbon-pedestrian class="inline-block" />
     </p>
@@ -37,13 +37,8 @@ watchEffect(() => {
       </p>
     </template>
 
-    <div>
-      <button
-        class="btn m-3 text-sm mt-6"
-        @click="router.back()"
-      >
-        {{ t('button.back') }}
-      </button>
-    </div>
+    <VButton class="wi-primary" @click="router.back()">
+      {{ t('button.back') }}
+    </VButton>
   </div>
 </template>

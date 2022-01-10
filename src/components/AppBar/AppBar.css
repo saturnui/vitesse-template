@@ -1,0 +1,9 @@
+@layer components {
+  .app-appbar {
+    @apply relative w-full flex justify-center px-2 py-2 gap-3 z-10;
+  }
+
+  .app-has-appbar {
+    @apply pt-13;
+  }
+}
